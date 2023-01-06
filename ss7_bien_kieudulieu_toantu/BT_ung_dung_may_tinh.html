@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td align="center" colspan="4"><h3>CALCULATOR</h3></td>
+    </tr>
+    <tr>
+        <td align="center" colspan="2"><input type="number" id="1" placeholder="Nhập số"></td>
+        <td align="center" colspan="2"><input type="number" id="2" placeholder="Nhập số"></td>
+    </tr>
+    <tr>
+        <td> <button onclick="cong()"> Cộng </button> </td>
+        <td> <button onclick="tru()"> Trừ </button> </td>
+        <td> <button onclick="nhan()"> Nhân </button> </td>
+        <td> <button onclick="chia()"> Chia </button> </td>
+    </tr>
+    <tr>
+        <td> Kết Quả :</td>
+        <td> <div id="result"></div> </td>
+    </tr>
+</table>
+<script>
+    function cong() {
+        let showResult = document.getElementById('result');
+        let so1 = document.getElementById('1').value;
+        let so2 = document.getElementById('2').value;
+        so1 = parseFloat(so1);
+        so2 = parseFloat(so2);
+        let total = so1 + so2;
+        showResult.innerHTML = `${total}`;
+    }
+    function tru() {
+        let showResult = document.getElementById('result')
+        let so1 = document.getElementById('1').value;
+        let so2 = document.getElementById('2').value;
+        so1 = parseFloat(so1);
+        so2 = parseFloat(so2);
+        let total = so1 - so2;
+        showResult.innerHTML = `${total}`;
+    }
+    function nhan() {
+        let showResult = document.getElementById('result')
+        let so1 = document.getElementById('1').value;
+        let so2 = document.getElementById('2').value;
+        so1 = parseFloat(so1);
+        so2 = parseFloat(so2);
+        let total = so1 * so2;
+        showResult.innerHTML = `${total}`;
+    }
+    function chia() {
+        let showResult = document.getElementById('result')
+        let so1 = document.getElementById('1').value;
+        let so2 = document.getElementById('2').value;
+        so1 = parseFloat(so1);
+        so2 = parseFloat(so2);
+        let total = so1 / so2;
+        showResult.innerHTML = `${total}`;
+    }
+</script>
+</body>
+</html>

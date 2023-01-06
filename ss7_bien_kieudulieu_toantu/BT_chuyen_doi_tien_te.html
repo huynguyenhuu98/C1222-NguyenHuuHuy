@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT chuyen doi tien te</title>
+</head>
+<body>
+<table>
+    <tr><h2>Bảng chuyển đổi tiền tệ</h2></tr>
+    <tr>
+        <td><b>Amount</b></td>
+        <td><b>From Currency</b></td>
+        <td><b>To Currenry</b></td>
+    </tr>
+    <tr>
+        <td><input type="nummber" id="amount"></td>
+        <td>
+            <select id="1">
+                <option value="VND"> VND </option>
+                <option value="USD"> USD </option>
+            </select>
+        </td>
+        <td>
+            <select id="2">
+                <option value="VND"> VND </option>
+                <option value="USD"> USD </option>
+            </select>
+        </td>
+        <td>
+            <button onclick="showResult()"> Chuyển đổi </button>
+        </td>
+    </tr>
+    <br>
+</table>
+    <p id="Kết quả"></p>
+    <script>
+        function showResult()
+        {
+            let amount = document.getElementById("amount").value;
+            let fromCurrency = document.getElementById("1").value;
+            let toCurrency = document.getElementById("2").value;
+            let Result;
+            if (fromCurrency == "USD" && toCurrency == "VND")
+                { Result = "Kết quả: " + (amount * 25000) + " Đồng"; }
+            else if (fromCurrency == "VND"&& toCurrency =="USD")
+                { Result = "Kết quả: "+ (amount / 25000) + " $"; }
+            else if (fromCurrency == "VND")
+                { Result = "Kết quả: " + amount + " Đồng" }
+            else
+                { Result = "Kết quả: " + amount + " $"}
+            document.getElementById("Kết quả").innerHTML = Result;
+        }
+    </script>
+</body>
+</html>
