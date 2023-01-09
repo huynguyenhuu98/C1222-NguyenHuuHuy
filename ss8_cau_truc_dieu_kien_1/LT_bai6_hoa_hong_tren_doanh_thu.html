@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyện tập BT6 hoa hồng trên doanh thu</title>
+</head>
+<body>
+<script>
+    let revenue = prompt("nhập doanh số: (triệu) ");
+    let bonus1 = (revenue*0.1);
+    let bonus2 = (revenue*0.08);
+    let bonus3 = (revenue*0.06);
+    let bonus4 = (revenue*0.04);
+    if (revenue > 100 )   {
+        document.write("Tiền hoa hồng: " + bonus1 + " triệu")
+    }
+    else if (revenue >50) {
+        document.write("Tiền hoa hồng: " + bonus2 + " triệu")
+    }
+    else if (revenue > 30 )  {
+        document.write("Tiền hoa hồng: " + bonus3 + " triệu")
+    }
+    else {document.write("Tiền hoa hồng: " + bonus4 + " triệu")
+    }
+</script>
+</body>
+</html>

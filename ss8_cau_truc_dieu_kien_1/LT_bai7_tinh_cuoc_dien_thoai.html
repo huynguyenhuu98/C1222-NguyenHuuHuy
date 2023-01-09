@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyện tập BT7 tính cước điện thoại</title>
+</head>
+<body>
+<script>
+    let phone = prompt("nhập số phút dùng điện thoại trong một tháng : ");
+    let fee1 = (phone*3500);
+    let fee2 = (phone*3000);
+    let fee3 = (phone*2500);
+    let fee4 = (phone*2000);
+    if (phone > 50 )   {
+        document.write("Tiền cước điện thoại: " + fee1 + " đồng")
+    }
+    else if (phone > 30) {
+        document.write("Tiền cước điện thoại: " + fee2 + " đồng")
+    }
+    else if (phone > 20 )  {
+        document.write("Tiền cước điện thoại: " + fee3 + " đồng")
+    }
+    else {document.write("Tiền cước điện thoại: " + fee4 + " đồng")
+    }
+</script>
+</body>
+</html>

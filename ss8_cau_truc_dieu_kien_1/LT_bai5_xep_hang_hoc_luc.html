@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyện tập BT5 xếp hạng học lực</title>
+</head>
+<body>
+<script>
+    let a = prompt("nhập điểm kiểm tra: ");
+    let b = prompt("nhập điểm giữa kì: ");
+    let c = prompt("nhập điểm cuối kì: ");
+    let point = (0.2*a+0.2*b+0.6*c)
+    if (point >=8 && point <10)   {
+        document.write("Học lực giỏi")
+    }
+    else if (point >=6.5 ) {
+        document.write("Học lực khá")
+    }
+    else if (point >=5 )  {
+        document.write("Học lực trung bình")
+    }
+    else if (point <5 && point >0) {
+        document.write("Học lực yếu")
+    }
+    else {document.write("Sai điểm")
+    }
+</script>
+</body>
+</html>
