@@ -39,16 +39,16 @@
             let amount = document.getElementById("amount").value;
             let fromCurrency = document.getElementById("1").value;
             let toCurrency = document.getElementById("2").value;
-            let Result;
+            let result;
             if (fromCurrency == "USD" && toCurrency == "VND")
-                { Result = "Kết quả: " + (amount * 25000) + " Đồng"; }
+                { result = "Kết quả: " + (amount * 25000) + " Đồng"; }
             else if (fromCurrency == "VND"&& toCurrency =="USD")
-                { Result = "Kết quả: "+ (amount / 25000) + " $"; }
+                { result = "Kết quả: "+ (amount / 25000) + " $"; }
             else if (fromCurrency == "VND")
-                { Result = "Kết quả: " + amount + " Đồng" }
+                { result = "Kết quả: " + amount + " Đồng" }
             else
-                { Result = "Kết quả: " + amount + " $"}
-            document.getElementById("Kết quả").innerHTML = Result;
+                { result = "Kết quả: " + amount + " $"}
+            document.getElementById("Kết quả").innerHTML = result;
         }
     </script>
 </body>
