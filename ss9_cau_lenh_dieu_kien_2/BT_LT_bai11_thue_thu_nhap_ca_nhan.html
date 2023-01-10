@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT_LT_bai11_tính thuế thu nhập cá nhân</title>
+</head>
+<body>
+<script>
+    let tax = +prompt("Nhập số thu nhập tháng: (triệu) ");
+    let tax1 = tax * 0.05;
+    let tax2 = tax * 0.1 - 0.25;
+    let tax3 = tax * 0.15 - 0.75;
+    let tax4 = tax * 0.2 - 1.65;
+    let tax5 = tax * 0.25 - 3.25;
+    if (tax <= 5) {
+        document.write("Thu nhập tháng: " + tax + " Thuế thu nhập cá nhân: " + tax1 + "đồng");
+    } else if (tax > 5 && tax <= 10) {
+        document.write("Thu nhập tháng: " + tax + " Thuế thu nhập cá nhân: " + tax2 + "đồng");
+    } else if (tax > 10 && tax <= 18) {
+        document.write("Thu nhập tháng: " + tax + " Thuế thu nhập cá nhân: " + tax3 + "đồng");
+    } else if (tax > 18 && tax <= 32) {
+        document.write("Thu nhập tháng: " + tax + " Thuế thu nhập cá nhân: " + tax4 + "đồng");
+    } else if (tax > 32) {
+        document.write("Thu nhập tháng: " + tax + " Thuế thu nhập cá nhân: " + tax5 + "đồng");
+    } else {
+        document.write("Sai số thu nhập tháng nhập vào. Vui lòng nhập lại");
+    }
+</script>
+</body>
+</html>

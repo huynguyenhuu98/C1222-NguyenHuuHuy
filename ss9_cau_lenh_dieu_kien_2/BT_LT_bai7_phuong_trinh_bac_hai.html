@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT_LT_bai7_phương trình bậc hai</title>
+</head>
+<body>
+<script>
+    let a = prompt("nhập số a của phương trình: ");
+    let b = prompt("nhập số b của phương trình: ");
+    let c = prompt("nhập số c của phương trình: ");
+    let delta = b * b - 4 * a * c;
+    let xk = -b / (2 * a);
+    let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+    let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+    if (delta < 0) {
+        document.write("Phương trình bậc hai vô nghiệm");
+    } else if (delta === 0) {
+        document.write("Phương trình bậc hai có nghiệm kép: " + xk);
+    } else {
+        document.write("Phương trình bậc hai có hai nghiệm: " + x1 + "và" + x2);
+    }
+</script>
+</body>
+</html>

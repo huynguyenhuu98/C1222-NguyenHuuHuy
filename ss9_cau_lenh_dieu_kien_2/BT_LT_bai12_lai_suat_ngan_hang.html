@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT_LT_bai12_tính lãi ngân hàng</title>
+</head>
+<body>
+<script>
+    let money = +prompt("Nhập số tiền ban đầu: (triệu) ");
+    let year = +prompt("Nhập số năm: ");
+    let rate = +prompt("Nhập lãi suất hàng năm: (%) ");
+    let interest = money * Math.pow((1 + (rate / 100)), year);
+    if (money > 0 && rate >= 0 && year > 0) {
+        document.write("Tiền ngân hàng sau lãi:" + Math.round(interest) + " triệu đồng");
+    } else {
+        document.write("Sai số nhập vào. Vui lòng nhập lại");
+    }
+</script>
+</body>
+</html>

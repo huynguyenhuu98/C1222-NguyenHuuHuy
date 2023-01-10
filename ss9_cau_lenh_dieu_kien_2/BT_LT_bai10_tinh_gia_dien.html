@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT_LT_bai10_tính giá điện</title>
+</head>
+<body>
+<script>
+    let elec = +prompt("Nhập số kWh : ");
+    let elec1 = elec * 1600;
+    let elec2 = elec * 1800;
+    let elec3 = elec * 2000;
+    let elec4 = elec * 2200;
+    let elec5 = elec * 2400;
+    let elec6 = elec * 2600;
+    if (elec > 0 && elec <= 50) {
+        document.write("Số kWh: " + elec + " Giá tiền điện: " + elec1 + "đồng");
+    } else if (elec >= 51 && elec <= 100) {
+        document.write("Số kWh: " + elec + " Giá tiền điện: " + elec2 + "đồng");
+    } else if (elec >= 101 && elec <= 200) {
+        document.write("Số kWh: " + elec + " Giá tiền điện: " + elec3 + "đồng");
+    } else if (elec >= 201 && elec <= 300) {
+        document.write("Số kWh: " + elec + " Giá tiền điện: " + elec4 + "đồng");
+    } else if (elec >= 301 && elec <= 400) {
+        document.write("Số kWh: " + elec + " Giá tiền điện: " + elec5 + "đồng");
+    } else if (elec >= 401) {
+        document.write("Số kWh: " + elec + " Giá tiền điện: " + elec6 + "đồng");
+    } else {
+        document.write("Sai số kWh nhập vào. Vui lòng nhập lại");
+    }
+</script>
+</body>
+</html>
