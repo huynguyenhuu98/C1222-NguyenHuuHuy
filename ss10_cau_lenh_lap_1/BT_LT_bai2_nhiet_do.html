@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2 nhiệt độ</title>
+</head>
+<body>
+<script>
+    let temperature = prompt("Nhập nhiệt độ hiện tại: ");
+    while (temperature > 100 || temperature < 20) {
+        if (temperature > 100) {
+            alert("Giảm nhiệt độ (*_*)");
+            temperature = prompt("mời bạn nhập lại nhiệt độ: ");
+        }
+        if (temperature < 20) {
+            alert("Tăng nhiệt độ (^..^)");
+            temperature = prompt("mời bạn nhập lại nhiệt độ: ");
+        }
+    }
+    alert("Nhiệt độ OK");
+</script>
+</body>
+</html>
