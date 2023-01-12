@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng 30 số chia hết cho 7</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    let sum = 0;
+    document.write("Tổng 30 số chia hết cho 7: ");
+    for (let a = 0; count <= 30; a++) {
+        if (a % 7 === 0) {
+            count++;
+            sum += a;
+        }
+    }
+    document.write(sum);
+</script>
+</body>
+</html>
