@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hiển thị 20 số nguyên tố đầu tiên</title>
+    <title>Hiển thị các số nguyên tố</title>
 </head>
 <body>
 <script>
-    // let number = +prompt("Nhập số cần hiển thị các số nguyên tố đầu tiên: ");
+    let number = +prompt("Nhập số lượng cần hiển thị các số nguyên tố: ");
     let count = 0;
     let counts = 0;
-    for (let i = 2; i < 286; i++) {
+    for (let i = 2; i < 1000; i++) {
         for (let j = 1; j <= i; j++) {
             if (i % j === 0) {
                 count += 1;
@@ -20,8 +20,7 @@
             counts += 1;
         }
         count = 0;
-        if (counts === 20) {
-        } else {
+        if (counts === number) {
             break;
         }
     }
