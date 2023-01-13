@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4 đảo ngược phần tử</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập độ dài của mảng: ");
+    let array = [];
+    for (let i = 0; i < a; i++) {
+        array[i] = +prompt("Nhập các phần tử của mảng: ");
+    }
+    let first = 0;
+    let last = array.length - 1;
+    let b = 0;
+    while (first < last) {
+        b = array[first];
+        array[first] = array[last];
+        array[last] = b;
+        first++;
+        last--;
+    }
+    document.write("Mảng đảo ngược các phần tử: " + array);
+</script>
+</body>
+</html>

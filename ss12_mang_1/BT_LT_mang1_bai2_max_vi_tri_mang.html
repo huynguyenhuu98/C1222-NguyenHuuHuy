@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2 giá trị lớn nhất và vị trí</title>
+</head>
+<body>
+<script>
+    let array = [2, 68, 8, 10, 11, 15, 86, 20, 39, 79];
+    let max = 0;
+    let index = 0;
+    for (let i = 0; i < 10; i++) {
+        for (let j = 0; j < array.length; j++) {
+            if (max < array[j]) {
+                max = array[j];
+                index++;
+            }
+        }
+    }
+    document.write("Các phần tử trong mảng: " + array + "<br>" + "Giá trị lớn nhất trong mảng: " + max + "<br>" + "Vị trí của phần tử: " + index);
+</script>
+</body>
+</html>

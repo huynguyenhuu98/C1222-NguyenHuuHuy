@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7 kiểm tra V và thay đổi vị trí V</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let result = true;
+    for (let i = 0; i < 10; i++) {
+        array[i] = +prompt("Nhập giá trị các phần tử của mảng: ");
+    }
+    let v = +prompt("Nhập giá trị của phần tử V:");
+    for (let j = 0; j < array[j]; j++) {
+        if (v === array[j]) {
+            result = true;
+            array.splice(array[j - 1], 1);
+            array.push(0);
+        }
+    }
+    document.write("Mảng sau khi xóa V: " + array);
+</script>
+</body>
+</html>
