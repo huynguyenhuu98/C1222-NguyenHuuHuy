@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Mẩng 2 bài 6 thay thế kí tự</title>
 </head>
 <body>
-$END$
+<script>
+    let a = [];
+    let sizea = +prompt("Nhập số kí tự trong mảng");
+    for (let i = 0; i < sizea; i++) {
+        a[i] = +prompt("Nhập giá trị các phần tử của mảng: ");
+    }
+    for (let j = 0; j < sizea; j++) {
+        if (a[j] === '-') {
+            a.splice(a[j - 1], 1);
+            a.push('_');
+        }
+    }
+    document.write("Mảng sau khi thay thế: " + a);
+</script>
 </body>
 </html>

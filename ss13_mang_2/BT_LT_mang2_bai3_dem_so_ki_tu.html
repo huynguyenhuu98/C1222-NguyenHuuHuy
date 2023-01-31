@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Mảng 2 bài 3 đếm số kí tự</title>
 </head>
 <body>
-$END$
+<script>
+    let a = [1, 2, 3, "a", "b", "c"];
+    let count = 0;
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] % 1 === 0) {
+            count += 1;
+        }
+    }
+    document.write("Số kí tự số trong mảng: " + count);
+</script>
 </body>
 </html>

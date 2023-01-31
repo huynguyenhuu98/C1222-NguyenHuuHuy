@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Mảng 2 bài 2 thứ tự đảo ngược</title>
 </head>
 <body>
-$END$
+<script>
+    let array = ['2','8','0','t','h','d'];
+    let first = 0;
+    let last = array.length - 1;
+    let b = 0;
+    while (first < last) {
+        b = array[first];
+        array[first] = array[last];
+        array[last] = b;
+        first++;
+        last--;
+    }
+    document.write("Mảng sau khi đảo ngược: " + array);
+</script>
 </body>
 </html>

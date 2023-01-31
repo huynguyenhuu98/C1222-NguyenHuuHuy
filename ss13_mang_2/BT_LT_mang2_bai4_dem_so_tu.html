@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Mảng 2 bài 4 đếm số kí tự</title>
 </head>
 <body>
-$END$
+<script>
+    let a = [2,8,0,"Trần","Hưng","Đạo","Đà Nẵng"];
+    let count = 0;
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] % 1 !== 0) {
+            count++;
+        }
+    }
+    document.write("Đếm số từ trong một chuỗi: " + count);
+</script>
 </body>
 </html>

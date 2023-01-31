@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Mảng 2 bài 5 kiểm tra hai chuỗi giống nhau</title>
 </head>
 <body>
-$END$
+<script>
+    let a = [];
+    let b = [];
+    let sizea = +prompt("Nhập kích thước chuỗi thứ nhất: ");
+    let sizeb = +prompt("Nhập kích thước chuỗi thứ hai: ");
+    for (let i = 0; i < sizea; i++) {
+        a = +prompt("Nhập giá trị chuỗi thứ nhất: ");
+    }
+    for (let j = 0; j < sizeb; j++) {
+        b = +prompt("Nhập giá trị chuỗi thứ hai: ");
+    }
+    if (a === b) {
+        document.write("Hai chuỗi bằng nhau");
+    } else {
+        document.write("Hai chuỗi không bằng nhau");
+    }
+</script>
 </body>
 </html>
