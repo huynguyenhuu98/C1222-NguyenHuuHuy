@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Mảng 1 bài 9 mảng hai chiều</title>
 </head>
 <body>
-$END$
+<script>
+    let a = [];
+    let b = [];
+    let c = [21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40];
+    for (let i = 0; i < 10; i++) {
+        a[i] = +prompt("Nhập 10 số nguyên dương vào mảng a: ");
+    }
+    for (let j = 0; j < 10; j++) {
+        b[j] = +prompt("Nhập 10 số nguyên dương vào mảng b: ");
+    }
+    c = c.concat(a, b);
+    alert(c);
+</script>
 </body>
 </html>

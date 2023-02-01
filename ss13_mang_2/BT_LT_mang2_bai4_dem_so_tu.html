@@ -6,10 +6,11 @@
 </head>
 <body>
 <script>
-    let a = [2,8,0,"Trần","Hưng","Đạo","Đà Nẵng"];
+    let a = prompt("Nhập một chuỗi: ");
+    let arr = a.split(" ");
     let count = 0;
-    for (let i = 0; i < a.length; i++) {
-        if (a[i] % 1 !== 0) {
+    for (let i = 0; i < arr.length; i++) {
+        if (a[i] !== " ") {
             count++;
         }
     }
