@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm 2 bài 2 tính diện tích và chu vi hình tròn</title>
+</head>
+<body>
+<!--<input type="text" id="1">-->
+<!--<input type="text" id="2">-->
+<!--<button onclick="area()">DienTich</button>-->
+<!--<button onclick="perimeter()">ChuVi</button>-->
+</body>
+<script>
+    let r = +prompt("Nhập bán kính hình tròn r: ");
+    function area() {
+        let are = (Math.pow(r, 2) * 3.14);
+        document.write("Diện tích hình tròn: "+are+"<br>");
+    }
+    function perimeter() {
+        let per = (2 * r * 3.14);
+        document.write("Chu vi hình tròn: "+per);
+    }
+    area();
+    perimeter();
+</script>
+</html>

@@ -7,24 +7,30 @@
 <body>
 <script>
     let a = +prompt("Nhập số cần kiểm tra ? ");
+    isPrime(a);
     function isPrime(a) {
         let count = 0;
+        let isPrime = false;
         if (a === 0) {
             document.write(a + "Không phải là số nguyên tố");
         } else {
             for (let i = 2; i <= a; i++) {
                 if (a % i === 0) {
-                    count = +1;
+                    count +=1;
                 }
             }
             if (count === 2) {
+                isPrime = true;
+            }
+            if (isPrime) {
                 document.write("Là số nguyên tố");
-            } else {
+            }
+            else {
                 document.write("Không phải là số nguyên tố");
             }
         }
     }
-    isPrime(a);
+
 </script>
 </body>
 </html>
