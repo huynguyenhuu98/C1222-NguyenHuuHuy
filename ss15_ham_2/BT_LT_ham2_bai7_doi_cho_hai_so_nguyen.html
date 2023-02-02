@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Hàm 2 bài 7 đổi chỗ hai số nguyên</title>
 </head>
 <body>
-$END$
+<script>
+    let a = +prompt("Nhập số thứ nhất:");
+    let b = +prompt("Nhập số thứ hai:");
+    let temp;
+    function changeNum(a, b) {
+        temp = a;
+        a = b;
+        b = temp;
+        alert(a + " " + b);
+    }
+    changeNum(a, b);
+</script>
 </body>
 </html>

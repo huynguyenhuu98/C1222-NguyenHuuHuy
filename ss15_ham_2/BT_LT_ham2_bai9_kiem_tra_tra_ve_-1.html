@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm 2 bìa 9 kiểm tra trả về -1</title>
+</head>
+<body>
+<script>
+    let arr = ['c', 'o', 'd', 'e', 'g', 'y', 'm'];
+    let a = prompt("Nhập kí tự cần tìm:");
+    let flag = -1;
+    function checkCharacter(arr, a) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (a === arr[i]) {
+                flag = 0;
+                count++;
+            }
+        }
+        if (flag === 0) {
+            return count;
+        } else {
+            return flag;
+        }
+    }
+    alert(checkCharacter(arr, a));
+</script>
+</body>
+</html>

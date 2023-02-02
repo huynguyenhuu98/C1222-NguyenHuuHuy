@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Hàm 2 bài 8 đảo ngược mảng số nguyên</title>
 </head>
 <body>
-$END$
+<script>
+    let arr = [];
+    let a = +prompt("số lượng phần tử mảng mà bạn muốn:");
+    let arr1 = [];
+    for (let i = 0; i < a; i++) {
+        let b = +prompt("nhập giá trị:");
+        arr.push(b);
+    }
+    function reverseArray() {
+        for (let i = (arr.length - 1); i >= 0; i--) {
+            arr1.push(arr[i]);
+        }
+        alert(arr1);
+        return arr1;
+    }
+    reverseArray(arr1);
+</script>
 </body>
 </html>

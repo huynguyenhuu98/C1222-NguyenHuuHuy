@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>hàm 2 bài 4 kiểm tra kí tự số</title>
 </head>
 <body>
-$END$
+<script>
+    let input = prompt("Nhập vào kí tự: ");
+    function checkNum(input) {
+        if (!isNaN(input)) {
+            document.write("Là kí tự số");
+        } else {
+            document.write("Không phải là kí tự số");
+        }
+    }
+    checkNum(input);
+</script>
 </body>
 </html>

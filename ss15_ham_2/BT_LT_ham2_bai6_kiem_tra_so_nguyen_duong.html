@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Hàm 2 bìa 6 kiểm tra số nguyên dương</title>
 </head>
 <body>
-$END$
+<script>
+    let a = +prompt("Nhập vào một số: ");
+    function checkNum(a) {
+        if (a % 1 === 0 && a > 0) {
+            alert("true");
+        } else {
+            alert("false");
+        }
+    }
+    checkNum(a);
+</script>
 </body>
 </html>
