@@ -6,6 +6,9 @@
 </head>
 <body>
 <script>
+    let tem = 25;
+    let template = new Temperature(tem);
+
     class Temperature {
         celsius;
 
@@ -13,21 +16,17 @@
             this.celsius = celsius;
         }
 
-        fahrenheit() {
-            return 9 / 5 * this.celsius + 32;
+        getFahrenheit() {
+            return (9 / 5 * this.celsius + 32);
         }
 
-        kelvins() {
-            return this.celsius + 273.15;
+        getKelvins() {
+            return (this.celsius + 273.15);
         }
     }
 
-    let temperature = new Temperature(25);
-    let my_fahrenheit = temperature.fahrenheit();
-    let my_kelvins = temperature.kelvins();
-
-    document.write("Nhiệt độ K: " + my_kelvins + "<br>"
-        + "Nhiệt độ F: " + my_fahrenheit);
+    document.write("độ K: " + template.getKelvins() + "<br>"
+        + "độ F: " + template.getFahrenheit());
 </script>
 </body>
 </html>
