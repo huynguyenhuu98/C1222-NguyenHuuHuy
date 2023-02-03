@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập xây dựng lớp mô tả hình chữ nhật</title>
+</head>
+<body>
+<script>
+    class Rectangle {
+        length;
+        width;
+
+        constructor(length, width) {
+            this.length = length;
+            this.width = width;
+        }
+
+        getWidth() {
+            return this.width;
+        }
+
+        getHeight() {
+            return this.height;
+        }
+
+        setWidth(width) {
+            this.width = width;
+        }
+
+        setHeight(height) {
+            this.height = height;
+        }
+
+        getArea() {
+            return this.width * this.height;
+        }
+
+        getPerimeter() {
+            return (this.width + this.height) * 2;
+        }
+    }
+
+</script>
+</body>
+</html>
