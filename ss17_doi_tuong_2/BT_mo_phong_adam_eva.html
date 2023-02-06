@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập ứng dụng mô phỏng Adam và Eva</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor(_weight) {
+            this._weight = 10;
+        }
+
+        getWeight() {
+            return this._weight;
+        }
+
+        isEmpty() {
+            return this._weight <= 10;
+        }
+
+        decreaseApple() {
+            if (this.isEmpty()) {
+                alert("Đã hết quả táo *_*");
+            } else {
+                this._weight--;
+            }
+        }
+    }
+
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setName() {
+            this.name = name;
+        }
+
+        getWeightHuman() {
+            return this.weight;
+        }
+
+        setWeight() {
+            this.weight = weight;
+        }
+
+        isMale() {
+            return this.gender === 1;
+        }
+
+        getGender() {
+            if (this.isMale()) {
+                return "Male";
+            } else {
+                return "Female";
+            }
+        }
+
+        say(string) {
+            console.log(string);
+        }
+
+        // checkApple(apple) {
+        //     return apple.isEmpty();
+        }
+
+        eat(apple) {
+            if (apple.getWeight() > 0) {
+                apple.decreaseApple();
+                this.weight++;
+            } else {
+                alert("Táo đã hết");
+            }
+        }
+
+        // getInfo(human) {
+        //     alert(human.name + " " + human.weight + " " + human.getGender());
+        // }
+    }
+
+    let adam = new Human("Adam", 1, 70);
+    let eva = new Human("Eva", 2, 50);
+    let app = new Apple(10);
+    adam.say("Tôi là Adam:");
+    eva.say("Tôi là Eva: ");
+    while (app.isEmpty() !== true) {
+        document.write("Adam ăn táo" + "<br>");
+        adam.eat(app);
+        document.write("Quả táo còn: " + app.getWeight() + " đơn vị");
+        document.write("Cân nặng của Adam: " + adam.getWeightHuman() + "đơn vị");
+        document.write("<br>");
+        document.write("Eva ăn táo" + "<br>");
+        eva.eat(app);
+        document.write("Quả táo còn: " + app.getWeight() + " đơn vị");
+        document.write("Cân nặng của Eva: " + eva.getWeightHuman() + " đơn vị");
+    }
+</script>
+</body>
+</html>
