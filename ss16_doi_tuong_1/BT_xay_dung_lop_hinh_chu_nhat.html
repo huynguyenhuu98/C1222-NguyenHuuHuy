@@ -5,41 +5,32 @@
     <title>Bài tập xây dựng lớp mô tả hình chữ nhật</title>
 </head>
 <body>
+<canvas id="canvas" width="600" height="400"></canvas>
 <script>
+    let wid = +prompt("Nhập chiều dài: ");
+    let hei = +prompt("Nhập chiều cao: ");
+
     class Rectangle {
-        length;
-        width;
-
-        constructor(length, width) {
-            this.length = length;
-            this.width = width;
-        }
-
-        getWidth() {
-            return this.width;
-        }
-
-        getHeight() {
-            return this.height;
-        }
-
-        setWidth(width) {
-            this.width = width;
-        }
-
-        setHeight(height) {
+        constructor(height, width) {
             this.height = height;
-        }
-
-        getArea() {
-            return this.width * this.height;
+            this.width = width;
         }
 
         getPerimeter() {
             return (this.width + this.height) * 2;
         }
+
+        getArea() {
+            return this.width * this.height;
+        }
     }
 
+    let myRectangle = new Rectangle(hei, wid);
+    let can = document.getElementById("canvas");
+    let ctx = can.getContext('2d');
+    ctx.fillRect(10, 10, myRectangle.width, myRectangle.height);
+    document.write("Chu vi:" + myRectangle.getPerimeter() + "<br>" +
+        "Diện tích:" + myRectangle.getArea());
 </script>
 </body>
 </html>
