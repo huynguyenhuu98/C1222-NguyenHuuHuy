@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 2 bài 2 Loop</title>
+</head>
+<body>
+<script>
+    let hight = +prompt("Nhập chiều cao của hình tam giác cân");
+    for (let i = 1; i <= hight; i++) {
+        for (let j = 1; j <= hight - i; j++) {
+            document.write("&nbsp;&nbsp");
+        }
+        for (let k = 1; k <= 2 * i - 1; k++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+</script>
+</body>
+</html>

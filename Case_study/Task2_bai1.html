@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 2 bài 1 Loop</title>
+</head>
+<body>
+<script>
+    let hight=+prompt("Nhập chiều cao tam giác:");
+    for (let i = 1; i <= hight; i++) {
+        for (let j = 1; j <= i; j++) {
+            if (i === hight || i === j || j === 1) {
+                document.write("*");
+            } else {
+                document.write("&nbsp;&nbsp");
+            }
+        }
+        document.write("<br>");
+    }
+</script>
+</body>
+</html>
