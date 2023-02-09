@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 3 bài 1 (Mảng và Loop)</title>
+</head>
+<body>
+<script>
+    let a = [0, 8, 3, 5, 4, 4, 3, 4, 4, 3];
+    let prefixSums = [];
+    let b = 0;
+    for (let i = 0; i < a.length; i++) {
+        b += a[i];
+        prefixSums[i] = b;
+    }
+    alert(prefixSums);
+</script>
+</body>
+</html>

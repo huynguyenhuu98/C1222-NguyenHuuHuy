@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 3 bài 2 (Mảng và Loop)</title>
+</head>
+<body>
+<script>
+    let a = [5, 4, 4, 3, 4, 4, 3];
+    let b = [0, 8, 3, 5, 4, 4, 3, 4, 4, 3];
+    let missValue = [];
+    let count = 0;
+    for (let i = 0; i < b.length; i++) {
+        for (let j = 0; j < a.length; j++) {
+            if (a[i] === b[i]) {
+                count++;
+            }
+        }
+        if (count === 0) {
+            missValue.push(b[i]);
+        }
+    }
+    alert(missValue);
+</script>
+</body>
+</html>

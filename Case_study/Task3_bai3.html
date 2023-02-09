@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 3 bài 3 (Mảng và Loop)</title>
+</head>
+<body>
+<script>
+    let numerator = [0, 8, 3, 5, 4, 4, 3, 4, 4, 3];
+    let denominator = [0, 9, 2, 9, 8, 6, 2, 8, 2, 6];
+    let max = numerator[0] / denominator[0];
+    let count = 0;
+    for (let i = 0; i < numerator.length; i++) {
+        if (numerator[i + 1] / denominator[i + 1] > numerator[i] / denominator[i]) {
+            max = numerator[i + 1] / denominator[i + 1];
+            count = i + 1;
+        }
+    }
+    alert(max + " Là phân số lớn nhất, có chỉ số là " + count);
+</script>
+</body>
+</html>
