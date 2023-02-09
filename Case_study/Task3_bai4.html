@@ -6,16 +6,50 @@
 </head>
 <body>
 <script>
-    alert("1(cafe), 2(cam vắt), 3(nước ép cà rốt), " +
-        "4(nước ép cà chua), 5(nước lọc), 6(nước dừa), 7(thoát gọi món)");
-    let price = [10,20,18,15,5,25];
+    let price;
+    let drink;
+    let amount = 0;
+    let total = 0;
     do {
-        let drink = +prompt("Nhập số tương ứng với nước uống: ");
-        alert(price[drink]);
-        let amount = +prompt("Nhập số lượng nước uống: ");
-    } while (drink !== 7) {
-
-    }
+        drink = +prompt("1 (cafe), 2 (cam vắt), 3(nước ép cà rốt), " +
+            "4(nước ép cà chua), 5(nước lọc), 6(nước dừa), 7(thoát gọi món)");
+        switch (drink) {
+            case 1:
+                price = 10000;
+                amount = +prompt("Giá đồ uống này: " + price + "Nhập số lượng đồ uống này: ");
+                total += price * amount;
+                break;
+            case 2:
+                price = 20000;
+                amount = +prompt("Giá đồ uống này: " + price + "Nhập số lượng đồ uống này: ");
+                total += price * amount;
+                break;
+            case 3:
+                price = 15000;
+                amount = +prompt("Giá đồ uống này: " + price + "Nhập số lượng đồ uống này: ");
+                total += price * amount;
+                break;
+            case 4:
+                price = 15000;
+                amount = +prompt("Giá đồ uống này: " + price + "Nhập số lượng đồ uống này: ");
+                total += price * amount;
+                break;
+            case 5:
+                price = 5000;
+                amount = +prompt("Giá đồ uống này: " + price + "Nhập số lượng đồ uống này: ");
+                total += price * amount;
+                break;
+            case 6:
+                price = 20000;
+                amount = +prompt("Giá đồ uống này: " + price + "Nhập số lượng đồ uống này: ");
+                total += price * amount;
+                break;
+            case 7:
+                alert("Kết thúc quá trình đặt đồ uống");
+                break;
+        }
+    } while (drink !== 7);
+    alert("Tổng số tiền cần trả: " + total);
 </script>
 </body>
 </html>
