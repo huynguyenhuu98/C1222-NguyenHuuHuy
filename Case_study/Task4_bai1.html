@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4 bài 1 (String)</title>
+</head>
+<body>
+<script>
+    str = prompt("Nhập xâu kí tự cần chuyển đổi: ");
+
+    function upperCase(str) {
+        let arr1 = str.toLowerCase().split(" ");
+        let newarr1 = [];
+        for (let i = 0; i < arr1.length; i++) {
+            newarr1.push(arr1[i].charAt(0).toUpperCase() + arr1[i].slice(1));
+        }
+        return newarr1.join(" ");
+    }
+
+    document.write(upperCase(str));
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 5 bài 1 (Mảng 2 chiều)</title>
+</head>
+<body>
+<script>
+    let length1 = +prompt("Nhập độ dài mảng lớn: ");
+    let arr1 = Array(length1);
+    let sum = 0;
+    for (let i = 0; i < length1; i++) {
+        let length2 = +prompt("Nhập độ dài mảng nhỏ " + (i + 1));
+        let arr2 = Array(length2);
+        for (let j = 0; j < length2; j++) {
+            arr2[j] = +prompt("Nhập phần tử thứ " + (j + 1) + " của mảng nhỏ " + (i + 1));
+            if (arr2[j] % 2 === 0) {
+                sum += arr2[j];
+            }
+        }
+        arr1[i] = arr2;
+    }
+    alert(sum);
+</script>
+</body>
+</html>

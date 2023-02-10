@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 5 bài 1 (Mảng 2 chiều)</title>
+</head>
+<body>
+<script>
+    let length1 = +prompt("Nhập độ dài mảng lớn: ");
+    let arr1 = Array(length1);
+    let prime = false;
+    let countprime = 0;
+    let count = 0;
+    for (let i = 0; i < length1; i++) {
+        let length2 = +prompt("Nhập độ dài mảng nhỏ " + (i + 1));
+        let arr2 = Array(length2);
+        for (let j = 0; j < length2; j++) {
+            arr2[j] = +prompt("Nhập phần tử thứ " + (j + 1) + " của mảng nhỏ " + (i + 1));
+            for (let k = 2; k <= arr2[j].length; k++) {
+                if (arr2[j] % k === 0) {
+                    count++;
+                }
+            }
+            if (count === 2) {
+                prime = true;
+                countprime++;
+            }
+            count = 0;
+            arr1[i] = arr2;
+        }
+    }
+    if (prime) {
+        alert("Có " + countprime + " số nguyên tố trong mảng");
+    } else {
+        alert("Không có số nguyên tố")
+    }
+</script>
+</body>
+</html>
