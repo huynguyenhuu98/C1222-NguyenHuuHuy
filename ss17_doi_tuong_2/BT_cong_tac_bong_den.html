@@ -8,27 +8,34 @@
 <script>
     class ElectricLamp {
         constructor(status){
-            this.status= status;
+            this.status= false;
         }
         getStatus(){
             return this.status;
         }
     }
     class SwitchButton {
-        constructor(status,lamp){
-            this.status = status;
+        constructor(lamp){
+            this.status = lamp.status;
             this.lamp = lamp;
         }
-        getStatus(){
-            return this.status;
-        }
         getLamp(){
-            return this.lamp;
+            this.lamp = lamp;
         }
-        switchButton(){
-            
+        switchOn() {
+            this.lamp.status = true;
+        }
+        switchOff(){
+            this.lamp.status = false;
         }
     }
+    let electricLamp = new ElectricLamp();
+    let switchButton = new SwitchButton(electricLamp);
+
+    document.write(electricLamp.status);
+    console.log(switchButton.switchOn());
+    document.write(electricLamp.status);
+    console.log(switchButton.switchOff());
 </script>
 </body>
 </html>
